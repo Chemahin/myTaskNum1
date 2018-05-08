@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myTask1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+	<div class="container main">
+		<div class="col-md-6 col-md-offset-3 jumbotron">
+			<!-- <form action="/action_page.php">
+				<div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" id="pwd">
+				</div>
+				
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form> -->
+		</div>
+	</div>
+	
+	 <script type="text/babel">
+	 	var Contact = React.createClass({
+            render: function() {
+                return (
+                    <li className="contact">
+                        <img className="contact-image" src={this.props.image} width="60px" height="60px" />
+                        <div className="contact-info">
+                            <div className="contact-name"> {this.props.name} </div>
+                            <div className="contact-number"> {this.props.phoneNumber} </div>
+                        </div>
+                    </li>
+                );
+            }
+        });
+
+	 </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
